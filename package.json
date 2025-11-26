@@ -1,0 +1,27 @@
+{
+	"name": "k-mobile-agent",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@types/node": "^24.10.1",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.50.0"
+	},
+	"dependencies": {
+		"@cloudflare/ai": "^1.2.2",
+		"@google/generative-ai": "^0.24.1",
+		"base64-js": "^1.5.1",
+		"hono": "^4.10.6",
+		"mustache": "^4.2.0",
+		"openai": "^6.9.1"
+	}
+}

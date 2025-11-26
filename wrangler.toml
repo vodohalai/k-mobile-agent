@@ -1,0 +1,36 @@
+name = "k-mobile-agent"
+compatibility_date = "2024-11-23"
+account_id = "6757cbcd82264a12f9904bc741aacb44"
+main = "src/index.ts"
+
+[assets]
+directory = "./ui/dist"
+binding = "ASSETS"
+
+[vars]
+OPENAI_MODEL_NAME = "gpt-4.1-mini"
+GEMINI_MODEL_NAME = "gemini-2.5-flash"
+FB_VERIFY_TOKEN = "abc123"
+FB_PAGE_ACCESS_TOKEN = "YOUR_FB_PAGE_ACCESS_TOKEN"
+OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+
+[[kv_namespaces]]
+binding = "SESSION_STORE"
+id = "605979d397c34d0f9898f3c9295de74d"
+
+[[kv_namespaces]]
+binding = "CHAT_HISTORY"
+id = "32d06bebd2c64e878b089da7c0219b20"
+
+[[d1_databases]]
+binding = "APP_DB"
+database_name = "k-mobile-db"
+database_id = "402c6b91-8f7d-4cc2-a5ec-aa8693d0b802"
+
+[[vectorize]]
+binding = "DOC_INDEX"
+index_name = "k-mobile-index"
+
+[ai]
+binding = "AI"
